@@ -1,0 +1,147 @@
+body {
+    font-family: 'Montserrat';
+    text-align:center;
+}
+h2, h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+h3 {
+    font-size:1.5rem;
+}
+p {
+    color:#8f8f8f;
+}
+.container-fluid {
+    padding:7% 15%;
+}
+
+/* Sections */
+.colored-section {
+    background-color:#ff4c68;
+    color:white;
+}
+.white-section {
+    background-color:white;
+}
+
+/* Navigation Bar Add divs in level order*/
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.navbar-brand {
+    font-size: 40px;
+    font-family:'Ubuntu';
+}
+.nav-item {
+    padding:0 18px;
+    font-size: 20px;
+}
+.nav-link {
+    font-size:1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+/* Buttons Best to Add in Custom class rather than relying on Bootstrap classes*/
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Headings */
+.section-heading {
+    font-size: 3rem;
+    line-height:1.5;
+}
+
+/* Title Section*/
+.first-dog-pic {
+    transform:rotate(25deg);
+    transform-origin: 130px 300px;
+    width: 65%;
+    position: absolute;
+}
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align:left;
+}
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight:900;
+    margin-top: 30px;
+}
+
+/* Features */
+#features {
+    position:relative;
+    z-index: 1;/*  elements that come later (below) in html flow, sit on top so no need to set z-index */
+}
+.icon {
+    color:#ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover {
+   color:#ff4c68;
+/* had to add custom class to font awesome to get hover to work */
+}
+.feature-box {
+    padding: 5%; /* made text line shorter and easier to read*/
+}
+.feature-title {
+    font-size:1.5rem;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color:#ef8172;
+}
+.testimonial-image {
+    width:10%;
+    border-radius:100%;
+    margin: 20px;
+}
+.testimonial-text {
+    font-size: 3rem;
+    line-height:1.5;
+}
+
+/* Press */
+#press {
+    background-color:#ef8172;  
+    padding-bottom: 3%;
+}
+.press-logo {
+    width:15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+    padding: 100px;
+}
+.pricing-column {
+    padding: 3% 2%;
+}
+.price-text {
+    font-size: 3rem;
+    line-height:1.5;
+}
+
+/* Footer */
+.sns {
+    display: inline-block;
+    color:#8f8f8f;
+    margin: 10px 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 1028px) {
+    .first-dog-pic {
+        position: static;
+        transform: rotate(0);
+    }
+    #title {
+        text-align: center;
+    }
+}
